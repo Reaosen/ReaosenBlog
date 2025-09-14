@@ -2,6 +2,7 @@ module.exports = {
   // 添加标题和描述
   title: "Reaosen's blog",
   description: "这是我的个人网站，用来存放一些有用或者没用的碎碎念",
+  lang: 'zh-CN',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['link', { rel: 'icon', href: '/reaosen_favicon.ico' }], // 增加一个自定义的 favicon(网页标签的图标)
   ],
@@ -19,8 +20,7 @@ module.exports = {
     sidebar: [
       {
         title: '工作笔记',   // 必要的
-        path: '/workExperience/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-        collapsable: false,// 是否可折叠，默认为true
+        collapsable: true,// 是否可折叠，默认为true
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
           {
@@ -31,8 +31,7 @@ module.exports = {
       },
       {
         title: '碎碎念',
-        path: '/randomThought/',
-        collapsable: false,
+        collapsable: true,
         children: [
           {
             title: '无',
@@ -42,8 +41,7 @@ module.exports = {
       },
       {
         title: '读书笔记',
-        path: '/readingNotes/',
-        collapsable: false,
+        collapsable: true,
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
           {
@@ -52,6 +50,7 @@ module.exports = {
           }
         ]
       },
-    ]
+    ],
+    lastUpdated: '更新时间', // string | boolean
   },
 }; 
