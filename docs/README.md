@@ -1,10 +1,19 @@
 <span style="font-size: 14px;">你好，这里是  </span>
 <span style="font-size: 40px;">**Reaosen**</span>
+<img src="https://reaosen.oss-cn-beijing.aliyuncs.com/image/myPhoto.jpeg" style="border-radius: 5px; box-shadow: rgb(221, 222, 222) 0px 0px 0px 5px, white 0px 0px 30px; width: 40%; display: inline-block; float: right;">
+<br>
+<span style="font-size: 35px; color: rgb(190,117,215);">coder</span>
+<br>
+<span style="font-size: 35px; color: gray;">&</span>
+<br>
+<span style="font-size: 30px; color: rgb(229,192,123);">哲学迷</span>
+<br>
+<br>
 
-是一个思考者，创造者，也是一个程序员。
+
+是一个思考者，创造者，也是一个~~小白~~程序员。
 
 正在尝试开发一些有趣的小玩意。
 
 欢迎你来到这里。
-
 
