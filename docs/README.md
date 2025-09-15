@@ -2,11 +2,7 @@
 <span style="font-size: 40px;">**Reaosen**</span>
 <img src="https://reaosen.oss-cn-beijing.aliyuncs.com/image/myPhoto.jpeg" style="border-radius: 5px; box-shadow: rgb(221, 222, 222) 0px 0px 0px 5px, white 0px 0px 30px; width: 40%; display: inline-block; float: right;">
 <br>
-<span style="font-size: 35px; color: rgb(190,117,215);">coder</span>
 <br>
-<span style="font-size: 35px; color: gray;">&</span>
-<br>
-<span style="font-size: 30px; color: rgb(229,192,123);">哲学迷</span>
 <br>
 <br>
 

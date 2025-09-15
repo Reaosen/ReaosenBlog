@@ -30,16 +30,6 @@ module.exports = {
         ]
       },
       {
-        title: '碎碎念',
-        collapsable: true,
-        children: [
-          {
-            title: '无',
-            path: '',
-          }
-        ]
-      },
-      {
         title: '读书笔记',
         collapsable: true,
         sidebarDepth: 1,    // 可选的, 默认值是 1
@@ -50,6 +40,28 @@ module.exports = {
           }
         ]
       },
+      {
+        title: '菜单',
+        collapsable: true,
+        children: [
+          {
+            title: '红烧肉',
+            path: '/cooking/hongshaorou.md',
+            
+          }
+        ]
+      },
+      {
+        title: '碎碎念',
+        collapsable: true,
+        children: [
+          {
+            title: '无',
+            path: '',
+          }
+        ]
+      },
+      
     ],
     lastUpdated: '更新时间', // string | boolean
   },
