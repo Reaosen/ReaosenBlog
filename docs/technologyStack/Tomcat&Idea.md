@@ -1,4 +1,4 @@
-## Tomcat服务器在Idea中乱码解决方案
+### Tomcat服务器在Idea中乱码解决方案
 
 1. 打开Idea中的Tomcat服务器编辑，选择启动/链接(Startup/Connection)，将传递环境变量(Pass environment variables)打勾。
 2. 在下方添加环境变量:

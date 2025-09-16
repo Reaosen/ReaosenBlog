@@ -26,7 +26,11 @@ module.exports = {
           {
             title: '7月工作笔记',   // 必要的
             path: '/workExperience/julyWork.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-          }
+          },
+          {
+            title: '8,9月工作笔记',   // 必要的
+            path: '/workExperience/Aug&Sept.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+          },
         ]
       },
       {
@@ -37,7 +41,11 @@ module.exports = {
           {
             title: 'Tomcat日志在idea控制台乱码',
             path: '/technologyStack/Tomcat&Idea.md',
-          }
+          },
+          {
+            title: '如何提升代码健壮性',
+            path: '/technologyStack/robustnessOfCode.md',
+          },
         ]
       },
       {
