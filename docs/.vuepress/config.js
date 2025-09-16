@@ -18,7 +18,7 @@ module.exports = {
     ],
     // 侧边栏
     sidebar: [
-      {
+      { 
         title: '工作笔记',   // 必要的
         collapsable: true,// 是否可折叠，默认为true
         sidebarDepth: 1,    // 可选的, 默认值是 1
@@ -26,6 +26,17 @@ module.exports = {
           {
             title: '7月工作笔记',   // 必要的
             path: '/workExperience/julyWork.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+          }
+        ]
+      },
+      {
+        title: '技术笔记',
+        collapsable: true,
+        sidebarDepth: 1,    // 可选的, 默认值是 1
+        children: [
+          {
+            title: 'Tomcat日志在idea控制台乱码',
+            path: '/technologyStack/Tomcat&Idea.md',
           }
         ]
       },
@@ -41,14 +52,18 @@ module.exports = {
         ]
       },
       {
-        title: '菜单',
+        title: '菜谱',
         collapsable: true,
         children: [
           {
             title: '红烧肉',
             path: '/cooking/hongshaorou.md',
             
-          }
+          },
+          {
+            title: '蒜苔炒肉',
+            path: '/cooking/suantaichaorou.md',
+          },
         ]
       },
       {
@@ -61,7 +76,6 @@ module.exports = {
           }
         ]
       },
-      
     ],
     lastUpdated: '更新时间', // string | boolean
   },
