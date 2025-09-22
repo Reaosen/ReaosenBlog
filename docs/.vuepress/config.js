@@ -43,6 +43,10 @@ module.exports = {
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
           {
+            title: '面试题',
+            path: '/technologyStack/interviewQuestions.md',
+          },
+          {
             title: 'Tomcat日志在idea控制台乱码',
             path: '/technologyStack/Tomcat&Idea.md',
           },
