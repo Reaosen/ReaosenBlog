@@ -31,6 +31,10 @@ module.exports = {
             title: '8,9月工作笔记',   // 必要的
             path: '/workExperience/Aug&Sept.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
           },
+          {
+            title: '离职（9.22）',   // 必要的
+            path: '/workExperience/QihuaSoft.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+          },
         ]
       },
       {
