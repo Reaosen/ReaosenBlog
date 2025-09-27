@@ -80,6 +80,21 @@ module.exports = {
             title: '蒜苔炒肉',
             path: '/cooking/suantaichaorou.md',
           },
+          {
+            title: '肥牛抱蛋饭',
+            path: '/cooking/FeiNiuBaoDanFan.md',
+          },
+        ]
+      },
+      {
+        title: '游戏攻略',
+        collapsable: true,
+        children: [
+          {
+            title: '三角洲行动-卡战备',
+            path: '/games/DeltaForceClient/KaZhanBei.md',
+          },
+
         ]
       },
       {
