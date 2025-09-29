@@ -1,0 +1,3 @@
+import comp from "F:/MyCode/ReaosenBlog_v2/docs/.vuepress/.temp/pages/index.html.vue"
+const data = JSON.parse("{\"path\":\"/\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{},\"filePathRelative\":\"README.md\",\"excerpt\":\"<p><span style=\\\"font-size: 14px;\\\">你好，这里是  </span>\\n<span style=\\\"font-size: 40px;\\\"><strong>Reaosen</strong></span>\\n<img src=\\\"https://reaosen.oss-cn-beijing.aliyuncs.com/image/myPhoto.jpeg\\\" style=\\\"border-radius: 5px; box-shadow: rgb(221, 222, 222) 0px 0px 0px 5px, white 0px 0px 30px; width: 40%; display: inline-block; float: right;\\\">\\n<br>\\n<br>\\n<br>\\n<br></p>\"}")
+export { comp, data }

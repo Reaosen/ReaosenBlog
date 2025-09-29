@@ -4,7 +4,7 @@
 set -e
 
 # 生成静态文件
-npm run build
+pnpm docs:build
 
 # 进入打包后的 dist 目录
 cd docs/.vuepress/dist

@@ -1,0 +1,3 @@
+import comp from "F:/MyCode/ReaosenBlog_v2/docs/.vuepress/.temp/pages/workExperience/QihuaSoft.html.vue"
+const data = JSON.parse("{\"path\":\"/workExperience/QihuaSoft.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":3,\"title\":\"离职(9.22)\",\"slug\":\"离职-9-22\",\"link\":\"#离职-9-22\",\"children\":[]}],\"git\":{},\"filePathRelative\":\"workExperience/QihuaSoft.md\",\"excerpt\":\"<h3>离职(9.22)</h3>\\n<p><strong>离职原因</strong></p>\\n<ol>\\n<li>\\n<p>出差次数过于频繁，且时间过长。</p>\\n</li>\\n<li>\\n<p>项目太老，结构不严谨，对自己未来的发展没有太大帮助。</p>\\n</li>\\n</ol>\\n<blockquote>\\n<p>另:以后还是仔细观察招聘信息，谨防货不对版。hr说的话待遇砍半听，工作翻倍听。</p>\\n</blockquote>\\n\"}")
+export { comp, data }

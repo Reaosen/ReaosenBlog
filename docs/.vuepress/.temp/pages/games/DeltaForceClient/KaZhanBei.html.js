@@ -1,0 +1,3 @@
+import comp from "F:/MyCode/ReaosenBlog_v2/docs/.vuepress/.temp/pages/games/DeltaForceClient/KaZhanBei.html.vue"
+const data = JSON.parse("{\"path\":\"/games/DeltaForceClient/KaZhanBei.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":3,\"title\":\"机密大坝、长弓\",\"slug\":\"机密大坝、长弓\",\"link\":\"#机密大坝、长弓\",\"children\":[]}],\"git\":{},\"filePathRelative\":\"games/DeltaForceClient/KaZhanBei.md\",\"excerpt\":\"<h3>机密大坝、长弓</h3>\\n<p><code>户外棒球帽</code>、<code>MAP侦查背包</code>、<code>强袭战术背心</code>、<code>MP5或勇士冲锋枪(带全息)</code>、<code>120发二级弹</code></p>\\n\"}")
+export { comp, data }

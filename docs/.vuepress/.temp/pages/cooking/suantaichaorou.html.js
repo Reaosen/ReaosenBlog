@@ -1,0 +1,3 @@
+import comp from "F:/MyCode/ReaosenBlog_v2/docs/.vuepress/.temp/pages/cooking/suantaichaorou.html.vue"
+const data = JSON.parse("{\"path\":\"/cooking/suantaichaorou.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":3,\"title\":\"蒜苔炒肉\",\"slug\":\"蒜苔炒肉\",\"link\":\"#蒜苔炒肉\",\"children\":[]}],\"git\":{},\"filePathRelative\":\"cooking/suantaichaorou.md\",\"excerpt\":\"<h3>蒜苔炒肉</h3>\\n<ol>\\n<li>肉丝加<code>花雕酒、生抽</code>抓拌，加过<code>过水的姜丝、盐、胡椒粉</code>抓拌，加<code>少量淀粉</code>抓拌，最后封油。</li>\\n<li>碗中加<code>1勺糖、2勺生抽、半勺老抽、4勺水</code>搅拌均匀备用。</li>\\n<li>油温4、5成热下肉丝，滑铲断生下蒜苔继续翻炒至蒜苔翠绿。</li>\\n<li>加挑好的料汁，盖盖转<strong>小火3分钟</strong>。</li>\\n<li>大火收汁（可加<code>十三香</code>）。</li>\\n</ol>\\n\"}")
+export { comp, data }
