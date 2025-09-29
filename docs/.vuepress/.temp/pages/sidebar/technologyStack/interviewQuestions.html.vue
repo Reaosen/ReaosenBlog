@@ -320,17 +320,16 @@
 <blockquote>
 <p>是一种线程安全的单例实现方式。</p>
 </blockquote>
-<div class="language-java line-numbers-mode" data-highlighter="prismjs" data-ext="java"><pre v-pre><code><span class="line"><span class="token keyword">class</span> <span class="token class-name">Singleton</span><span class="token punctuation">{</span></span>
-<span class="line">    <span class="token keyword">private</span> <span class="token class-name">Singleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span></span>
-<span class="line">    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">SingletonHolder</span><span class="token punctuation">{</span></span>
-<span class="line">        <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Singleton</span> <span class="token constant">INSTANCE</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Singleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
-<span class="line">    <span class="token punctuation">}</span></span>
-<span class="line">    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">Singleton</span> <span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span></span>
-<span class="line">        <span class="token keyword">return</span> <span class="token class-name">SingletonHolder</span><span class="token punctuation">.</span><span class="token constant">INSTANCE</span><span class="token punctuation">;</span></span>
-<span class="line">    <span class="token punctuation">}</span></span>
-<span class="line"><span class="token punctuation">}</span></span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="jdk8新特性" tabindex="-1"><a class="header-anchor" href="#jdk8新特性"><span>JDK8新特性</span></a></h2>
+<div class="language-java line-numbers-mode line-numbers-mode" data-highlighter="prismjs" data-ext="java"><pre  class="shiki nord vp-code" style="background-color:#2e3440ff;color:#d8dee9ff" v-pre=" language-java"><code><span class="line"><span class="line"><span style="color:#81A1C1">class</span><span style="color:#8FBCBB"> Singleton</span><span style="color:#ECEFF4">{</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">    private</span><span style="color:#88C0D0"> Singleton</span><span style="color:#ECEFF4">(){}</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">    private</span><span style="color:#81A1C1"> static</span><span style="color:#81A1C1"> class</span><span style="color:#8FBCBB"> SingletonHolder</span><span style="color:#ECEFF4">{</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">        private</span><span style="color:#81A1C1"> static</span><span style="color:#81A1C1"> final</span><span style="color:#8FBCBB"> Singleton</span><span style="color:#D8DEE9"> INSTANCE</span><span style="color:#81A1C1"> =</span><span style="color:#81A1C1"> new</span><span style="color:#88C0D0"> Singleton</span><span style="color:#ECEFF4">()</span><span style="color:#81A1C1">;</span></span></span>
+<span class="line"><span class="line"><span style="color:#ECEFF4">    }</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">    public</span><span style="color:#81A1C1"> static</span><span style="color:#8FBCBB"> Singleton</span><span style="color:#88C0D0"> getInstance</span><span style="color:#ECEFF4">(){</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">        return</span><span style="color:#D8DEE9"> SingletonHolder</span><span style="color:#ECEFF4">.</span><span style="color:#D8DEE9">INSTANCE</span><span style="color:#81A1C1">;</span></span></span>
+<span class="line"><span class="line"><span style="color:#ECEFF4">    }</span></span></span>
+<span class="line"><span class="line"><span style="color:#ECEFF4">}</span></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2 id="jdk8新特性" tabindex="-1"><a class="header-anchor" href="#jdk8新特性"><span>JDK8新特性</span></a></h2>
 <h3 id="_1-lambda表达式" tabindex="-1"><a class="header-anchor" href="#_1-lambda表达式"><span>1.lambda表达式</span></a></h3>
 <p>为了简化代码而生。</p>
 <p>引出：定义一个thread类，需要传入runnble接口的实现类，但是不想定义实现类，所以使用匿名内部类并重写里面的方法，但是由于我们只关心方法体中的内容，所以为了更加简化引出了lambda表达式。</p>
@@ -490,34 +489,32 @@
 <li>finally中不能有return，如果有的话，那么程序会提前退出，就不能得到预期结果了。</li>
 <li>有种情况finally中的代码不一定会执行，当程序调用system.exit方法时，程序会立即退出。</li>
 </ul>
-<div class="language-java line-numbers-mode" data-highlighter="prismjs" data-ext="java"><pre v-pre><code><span class="line"><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span></span>
-<span class="line"><span class="token keyword">try</span><span class="token punctuation">{</span></span>
-<span class="line">    <span class="token keyword">return</span> i<span class="token operator">++</span><span class="token punctuation">;</span></span>
-<span class="line"><span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">{</span></span>
-<span class="line">    </span>
-<span class="line"><span class="token punctuation">}</span><span class="token keyword">finally</span><span class="token punctuation">{</span></span>
-<span class="line">    <span class="token operator">++</span>i<span class="token punctuation">;</span></span>
-<span class="line"><span class="token punctuation">}</span></span>
-<span class="line"><span class="token comment">//返回结果是1</span></span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="什么是内存溢出-什么是内存泄漏-怎么避免" tabindex="-1"><a class="header-anchor" href="#什么是内存溢出-什么是内存泄漏-怎么避免"><span>什么是内存溢出？什么是内存泄漏？怎么避免？</span></a></h2>
+<div class="language-java line-numbers-mode line-numbers-mode" data-highlighter="prismjs" data-ext="java"><pre  class="shiki nord vp-code" style="background-color:#2e3440ff;color:#d8dee9ff" v-pre=" language-java"><code><span class="line"><span class="line"><span style="color:#81A1C1">int</span><span style="color:#D8DEE9"> i</span><span style="color:#81A1C1"> =</span><span style="color:#B48EAD"> 1</span><span style="color:#81A1C1">;</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">try</span><span style="color:#ECEFF4">{</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">    return</span><span style="color:#D8DEE9FF"> i</span><span style="color:#81A1C1">++;</span></span></span>
+<span class="line"><span class="line"><span style="color:#ECEFF4">}</span><span style="color:#81A1C1">catch</span><span style="color:#ECEFF4">{</span></span></span>
+<span class="line"><span class="line"><span style="color:#D8DEE9FF">    </span></span></span>
+<span class="line"><span class="line"><span style="color:#ECEFF4">}</span><span style="color:#81A1C1">finally</span><span style="color:#ECEFF4">{</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">    ++</span><span style="color:#D8DEE9FF">i</span><span style="color:#81A1C1">;</span></span></span>
+<span class="line"><span class="line"><span style="color:#ECEFF4">}</span></span></span>
+<span class="line"><span class="line"><span style="color:#616E88">//返回结果是1</span></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2 id="什么是内存溢出-什么是内存泄漏-怎么避免" tabindex="-1"><a class="header-anchor" href="#什么是内存溢出-什么是内存泄漏-怎么避免"><span>什么是内存溢出？什么是内存泄漏？怎么避免？</span></a></h2>
 <p><strong>内存溢出</strong>：当可用内存空间不足以存放新创建的对象时，这时候就会发生内存溢出。</p>
 <p><strong>内存泄漏</strong>：当我们执行完业务代码后，使用的对象应该被回收，但是由于还有别的对象引用了它，所以它不能被GC自动回收，这样就占了额外的内存空间，长时间就有可能导致内存溢出。</p>
 <p><strong>避免</strong>：我们使用完了对象后，手动的去关闭流或者释放内存。</p>
 <h2 id="怎么判断一个字符串是不是整数" tabindex="-1"><a class="header-anchor" href="#怎么判断一个字符串是不是整数"><span>怎么判断一个字符串是不是整数？</span></a></h2>
 <p>可以利用String中的matches使用正则表达式判断是不是整数。</p>
-<div class="language-java line-numbers-mode" data-highlighter="prismjs" data-ext="java"><pre v-pre><code><span class="line"><span class="token class-name">String</span> str <span class="token operator">=</span> <span class="token string">"12345"</span><span class="token punctuation">;</span></span>
-<span class="line"><span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">isInteger</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span></span>
-<span class="line">    <span class="token function">sout</span><span class="token punctuation">(</span><span class="token string">"str是一个整数"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
-<span class="line"><span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span></span>
-<span class="line">    <span class="token function">sout</span><span class="token punctuation">(</span><span class="token string">"str不是一个整数"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
-<span class="line"><span class="token punctuation">}</span></span>
-<span class="line"></span>
-<span class="line"><span class="token keyword">private</span> <span class="token keyword">boolean</span> <span class="token function">isInteger</span><span class="token punctuation">(</span><span class="token class-name">String</span> str<span class="token punctuation">)</span><span class="token punctuation">{</span></span>
-<span class="line">    <span class="token keyword">return</span> str<span class="token punctuation">.</span><span class="token function">matches</span><span class="token punctuation">(</span><span class="token string">"^-?\\d+$"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
-<span class="line"><span class="token punctuation">}</span></span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<div class="language-java line-numbers-mode line-numbers-mode" data-highlighter="prismjs" data-ext="java"><pre  class="shiki nord vp-code" style="background-color:#2e3440ff;color:#d8dee9ff" v-pre=" language-java"><code><span class="line"><span class="line"><span style="color:#8FBCBB">String</span><span style="color:#D8DEE9"> str</span><span style="color:#81A1C1"> =</span><span style="color:#ECEFF4"> "</span><span style="color:#A3BE8C">12345</span><span style="color:#ECEFF4">"</span><span style="color:#81A1C1">;</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">if</span><span style="color:#ECEFF4">(</span><span style="color:#88C0D0">isInteger</span><span style="color:#ECEFF4">(</span><span style="color:#D8DEE9FF">str</span><span style="color:#ECEFF4">)){</span></span></span>
+<span class="line"><span class="line"><span style="color:#88C0D0">    sout</span><span style="color:#ECEFF4">(</span><span style="color:#ECEFF4">"</span><span style="color:#A3BE8C">str是一个整数</span><span style="color:#ECEFF4">"</span><span style="color:#ECEFF4">)</span><span style="color:#81A1C1">;</span></span></span>
+<span class="line"><span class="line"><span style="color:#ECEFF4">}</span><span style="color:#81A1C1">else</span><span style="color:#ECEFF4">{</span></span></span>
+<span class="line"><span class="line"><span style="color:#88C0D0">    sout</span><span style="color:#ECEFF4">(</span><span style="color:#ECEFF4">"</span><span style="color:#A3BE8C">str不是一个整数</span><span style="color:#ECEFF4">"</span><span style="color:#ECEFF4">)</span><span style="color:#81A1C1">;</span></span></span>
+<span class="line"><span class="line"><span style="color:#ECEFF4">}</span></span></span>
+<span class="line"><span class="line"></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">private</span><span style="color:#81A1C1"> boolean</span><span style="color:#88C0D0"> isInteger</span><span style="color:#ECEFF4">(</span><span style="color:#8FBCBB">String</span><span style="color:#D8DEE9FF"> str</span><span style="color:#ECEFF4">){</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">    return</span><span style="color:#D8DEE9"> str</span><span style="color:#ECEFF4">.</span><span style="color:#88C0D0">matches</span><span style="color:#ECEFF4">(</span><span style="color:#ECEFF4">"</span><span style="color:#A3BE8C">^-?</span><span style="color:#EBCB8B">\\</span><span style="color:#A3BE8C">d+$</span><span style="color:#ECEFF4">"</span><span style="color:#ECEFF4">)</span><span style="color:#81A1C1">;</span></span></span>
+<span class="line"><span class="line"><span style="color:#ECEFF4">}</span></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ul>
 <li><code v-pre>^</code> 表示匹配字符串的开始位置</li>
 <li><code v-pre>-?</code> 表示匹配一个可选的负号</li>
 <li><code v-pre>\\d+</code> 表示匹配一个或多个数字</li>
@@ -1193,31 +1190,29 @@
 <h2 id="单例模式" tabindex="-1"><a class="header-anchor" href="#单例模式"><span>单例模式</span></a></h2>
 <p>单例模式分为饿汉单例和懒汉单例，饿汉单例在类加载的时候就初始化了对象，不存在线程安全问题，而懒汉单例在需要用到该对象的时候才去初始化对象，所以存在线程安全问题（两个线程同时判断对象为空，同时去初始化）。</p>
 <p><strong>饿汉单例</strong>：</p>
-<div class="language-java line-numbers-mode" data-highlighter="prismjs" data-ext="java"><pre v-pre><code><span class="line"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Singleton</span><span class="token punctuation">{</span></span>
-<span class="line">    <span class="token keyword">private</span> <span class="token class-name">Singleton</span><span class="token punctuation">{</span><span class="token punctuation">}</span></span>
-<span class="line">    <span class="token keyword">private</span> <span class="token keyword">static</span> fianl <span class="token class-name">Singleton</span> <span class="token constant">SINGLETON</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Singleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
-<span class="line">    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">Singleton</span> <span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span></span>
-<span class="line">        <span class="token keyword">return</span> <span class="token constant">SINGLETON</span><span class="token punctuation">;</span></span>
-<span class="line">    <span class="token punctuation">}</span></span>
-<span class="line"><span class="token punctuation">}</span></span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>懒汉单例</strong>：</p>
-<div class="language-java line-numbers-mode" data-highlighter="prismjs" data-ext="java"><pre v-pre><code><span class="line"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Singleton</span><span class="token punctuation">{</span></span>
-<span class="line">    <span class="token keyword">private</span> <span class="token class-name">Singleton</span><span class="token punctuation">{</span><span class="token punctuation">}</span></span>
-<span class="line">    <span class="token keyword">private</span> <span class="token keyword">volatile</span> <span class="token keyword">static</span> fianl <span class="token class-name">Singleton</span> <span class="token constant">SINGLETON</span><span class="token punctuation">;</span> <span class="token comment">//保证指令的有序性，因为创建对象这一句，在编译成字节码的时候是三句，需要保证顺序性。</span></span>
-<span class="line">    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">Singleton</span> <span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span></span>
-<span class="line">        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token constant">SINGLETON</span> <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">{</span>  <span class="token comment">// 这里使用到了双重检查锁</span></span>
-<span class="line">            <span class="token keyword">synchronized</span><span class="token punctuation">(</span><span class="token constant">SINGLETON</span><span class="token punctuation">)</span><span class="token punctuation">{</span></span>
-<span class="line">                <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token constant">SINGLETON</span> <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">{</span>  <span class="token comment">// 这里需要再次判空是因为，如果另外一个线程拿到锁了，不判空会再次创建对象。</span></span>
-<span class="line">                    <span class="token constant">SINGLETON</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Singleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
-<span class="line">                <span class="token punctuation">}</span></span>
-<span class="line">            <span class="token punctuation">}</span></span>
-<span class="line">        <span class="token punctuation">}</span></span>
-<span class="line">        <span class="token keyword">return</span> <span class="token constant">SINGLETON</span><span class="token punctuation">;</span></span>
-<span class="line">    <span class="token punctuation">}</span></span>
-<span class="line"><span class="token punctuation">}</span></span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1 id="数据结构" tabindex="-1"><a class="header-anchor" href="#数据结构"><span>数据结构</span></a></h1>
+<div class="language-java line-numbers-mode line-numbers-mode" data-highlighter="prismjs" data-ext="java"><pre  class="shiki nord vp-code" style="background-color:#2e3440ff;color:#d8dee9ff" v-pre=" language-java"><code><span class="line"><span class="line"><span style="color:#81A1C1">public</span><span style="color:#81A1C1"> class</span><span style="color:#8FBCBB"> Singleton</span><span style="color:#ECEFF4">{</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">    private</span><span style="color:#D8DEE9FF"> Singleton</span><span style="color:#ECEFF4">{}</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">    private</span><span style="color:#81A1C1"> static</span><span style="color:#D8DEE9FF"> fianl </span><span style="color:#8FBCBB">Singleton</span><span style="color:#D8DEE9"> SINGLETON</span><span style="color:#81A1C1"> =</span><span style="color:#81A1C1"> new</span><span style="color:#88C0D0"> Singleton</span><span style="color:#ECEFF4">()</span><span style="color:#81A1C1">;</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">    public</span><span style="color:#81A1C1"> static</span><span style="color:#8FBCBB"> Singleton</span><span style="color:#88C0D0"> getInstance</span><span style="color:#ECEFF4">(){</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">        return</span><span style="color:#D8DEE9FF"> SINGLETON</span><span style="color:#81A1C1">;</span></span></span>
+<span class="line"><span class="line"><span style="color:#ECEFF4">    }</span></span></span>
+<span class="line"><span class="line"><span style="color:#ECEFF4">}</span></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><strong>懒汉单例</strong>：</p>
+<div class="language-java line-numbers-mode line-numbers-mode" data-highlighter="prismjs" data-ext="java"><pre  class="shiki nord vp-code" style="background-color:#2e3440ff;color:#d8dee9ff" v-pre=" language-java"><code><span class="line"><span class="line"><span style="color:#81A1C1">public</span><span style="color:#81A1C1"> class</span><span style="color:#8FBCBB"> Singleton</span><span style="color:#ECEFF4">{</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">    private</span><span style="color:#D8DEE9FF"> Singleton</span><span style="color:#ECEFF4">{}</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">    private</span><span style="color:#81A1C1"> volatile</span><span style="color:#81A1C1"> static</span><span style="color:#D8DEE9FF"> fianl </span><span style="color:#8FBCBB">Singleton</span><span style="color:#D8DEE9"> SINGLETON</span><span style="color:#81A1C1">;</span><span style="color:#616E88"> //保证指令的有序性，因为创建对象这一句，在编译成字节码的时候是三句，需要保证顺序性。</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">    public</span><span style="color:#81A1C1"> static</span><span style="color:#8FBCBB"> Singleton</span><span style="color:#88C0D0"> getInstance</span><span style="color:#ECEFF4">(){</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">        if</span><span style="color:#ECEFF4">(</span><span style="color:#D8DEE9FF">SINGLETON </span><span style="color:#81A1C1">==</span><span style="color:#81A1C1"> null</span><span style="color:#ECEFF4">){</span><span style="color:#616E88">  // 这里使用到了双重检查锁</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">            synchronized</span><span style="color:#ECEFF4">(</span><span style="color:#D8DEE9FF">SINGLETON</span><span style="color:#ECEFF4">){</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">                if</span><span style="color:#ECEFF4">(</span><span style="color:#D8DEE9FF">SINGLETON </span><span style="color:#81A1C1">==</span><span style="color:#81A1C1"> null</span><span style="color:#ECEFF4">){</span><span style="color:#616E88">  // 这里需要再次判空是因为，如果另外一个线程拿到锁了，不判空会再次创建对象。</span></span></span>
+<span class="line"><span class="line"><span style="color:#D8DEE9FF">                    SINGLETON </span><span style="color:#81A1C1">=</span><span style="color:#81A1C1"> new</span><span style="color:#88C0D0"> Singleton</span><span style="color:#ECEFF4">()</span><span style="color:#81A1C1">;</span></span></span>
+<span class="line"><span class="line"><span style="color:#ECEFF4">                }</span></span></span>
+<span class="line"><span class="line"><span style="color:#ECEFF4">            }</span></span></span>
+<span class="line"><span class="line"><span style="color:#ECEFF4">        }</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">        return</span><span style="color:#D8DEE9FF"> SINGLETON</span><span style="color:#81A1C1">;</span></span></span>
+<span class="line"><span class="line"><span style="color:#ECEFF4">    }</span></span></span>
+<span class="line"><span class="line"><span style="color:#ECEFF4">}</span></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h1 id="数据结构" tabindex="-1"><a class="header-anchor" href="#数据结构"><span>数据结构</span></a></h1>
 <h2 id="红黑树" tabindex="-1"><a class="header-anchor" href="#红黑树"><span>红黑树</span></a></h2>
 <p>红黑树的本质是一种自平衡的二叉搜索树，在二叉搜索树的基础上引入了一些额外的规则：</p>
 <blockquote>
@@ -2179,15 +2174,14 @@
 </li>
 <li>
 <p>垃圾回收主要分为三个阶段：新生代回收，并发标记以及混合收集。</p>
-<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code><span class="line">新生代回收阶段: 刚开始内存区域都是空闲的,先挑出几个区域作为eden区存放新创建的对象,当eden区快放满的时候,会挑出一个空闲区域作为survivor区,利用复制算法将eden区中存活的对象复制到survivor区中,eden区会被回收.</span>
-<span class="line"></span>
-<span class="line">随着时间的流逝,eden区又快放满了,这时就会把eden区存活的对象和之前survivor区存活的对象通过复制算法,复制到新的survivor区中,之前survivor区中较老的对象会复制到old区中。</span>
-<span class="line"></span>
-<span class="line">并发标记阶段：当old区占用内存超过阈值的时候，就会触发并发标记，标记old区、eden区和survivor区中存活的对象，当标记完成以后进入混合收集阶段。</span>
-<span class="line"></span>
-<span class="line">混合收集阶段：这个阶段并不是对所有的old区进行垃圾回收，而是挑出一些存活对象比较少的old区，和eden区，survivor区同时进行垃圾回收，垃圾回收结束后进入新一轮的新生代回收，并发标记和混合收集。</span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<div class="language-text line-numbers-mode line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre  class="shiki nord vp-code" style="background-color:#2e3440ff;color:#d8dee9ff" v-pre=" language-text"><code><span class="line"><span class="line"><span>新生代回收阶段: 刚开始内存区域都是空闲的,先挑出几个区域作为eden区存放新创建的对象,当eden区快放满的时候,会挑出一个空闲区域作为survivor区,利用复制算法将eden区中存活的对象复制到survivor区中,eden区会被回收.</span></span></span>
+<span class="line"><span class="line"><span></span></span></span>
+<span class="line"><span class="line"><span>随着时间的流逝,eden区又快放满了,这时就会把eden区存活的对象和之前survivor区存活的对象通过复制算法,复制到新的survivor区中,之前survivor区中较老的对象会复制到old区中。</span></span></span>
+<span class="line"><span class="line"><span></span></span></span>
+<span class="line"><span class="line"><span>并发标记阶段：当old区占用内存超过阈值的时候，就会触发并发标记，标记old区、eden区和survivor区中存活的对象，当标记完成以后进入混合收集阶段。</span></span></span>
+<span class="line"><span class="line"><span></span></span></span>
+<span class="line"><span class="line"><span>混合收集阶段：这个阶段并不是对所有的old区进行垃圾回收，而是挑出一些存活对象比较少的old区，和eden区，survivor区同时进行垃圾回收，垃圾回收结束后进入新一轮的新生代回收，并发标记和混合收集。</span></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>如果并发失败（回收速度赶不上创建新对象的速度），会触发fullgc。</p>
 </li>
@@ -2652,18 +2646,17 @@
 <li>具体用户记录唯一的表中，初始化时用户却产生多条记录，怎么删除多余的（只保留任意一条）</li>
 </ol>
 <p>解决方法：我们可以根据记录的创建时间来保留最早的一条记录。</p>
-<div class="language-sql line-numbers-mode" data-highlighter="prismjs" data-ext="sql"><pre v-pre><code><span class="line"><span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> table_name</span>
-<span class="line"><span class="token keyword">WHERE</span> id <span class="token operator">NOT</span> <span class="token operator">IN</span> <span class="token punctuation">(</span></span>
-<span class="line">    <span class="token keyword">SELECT</span> id <span class="token keyword">FROM</span> <span class="token punctuation">(</span></span>
-<span class="line">        <span class="token keyword">SELECT</span> id</span>
-<span class="line">        <span class="token keyword">FROM</span> table_name </span>
-<span class="line">        <span class="token keyword">WHERE</span> name <span class="token operator">=</span> <span class="token string">'zhangsan'</span></span>
-<span class="line">        <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> create_time</span>
-<span class="line">        <span class="token keyword">LIMIT</span> <span class="token number">1</span></span>
-<span class="line">    <span class="token punctuation">)</span> <span class="token keyword">AS</span> t</span>
-<span class="line"><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这里将子查询的结果放到临时表中是因为在子查询中order by 和 limit 使用 可能会先执行 limit，再执行order  by ，这样就得不到预期结果了。</p>
+<div class="language-sql line-numbers-mode line-numbers-mode" data-highlighter="prismjs" data-ext="sql"><pre  class="shiki nord vp-code" style="background-color:#2e3440ff;color:#d8dee9ff" v-pre=" language-sql"><code><span class="line"><span class="line"><span style="color:#81A1C1">DELETE</span><span style="color:#81A1C1"> FROM</span><span style="color:#D8DEE9FF"> table_name</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">WHERE</span><span style="color:#D8DEE9FF"> id </span><span style="color:#81A1C1">NOT</span><span style="color:#81A1C1"> IN</span><span style="color:#D8DEE9FF"> (</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">    SELECT</span><span style="color:#D8DEE9FF"> id </span><span style="color:#81A1C1">FROM</span><span style="color:#D8DEE9FF"> (</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">        SELECT</span><span style="color:#D8DEE9FF"> id</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">        FROM</span><span style="color:#D8DEE9FF"> table_name </span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">        WHERE</span><span style="color:#81A1C1"> name</span><span style="color:#81A1C1"> =</span><span style="color:#ECEFF4"> '</span><span style="color:#A3BE8C">zhangsan</span><span style="color:#ECEFF4">'</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">        ORDER BY</span><span style="color:#D8DEE9FF"> create_time</span></span></span>
+<span class="line"><span class="line"><span style="color:#81A1C1">        LIMIT</span><span style="color:#B48EAD"> 1</span></span></span>
+<span class="line"><span class="line"><span style="color:#D8DEE9FF">    ) </span><span style="color:#81A1C1">AS</span><span style="color:#D8DEE9FF"> t</span></span></span>
+<span class="line"><span class="line"><span style="color:#D8DEE9FF">);</span></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>这里将子查询的结果放到临时表中是因为在子查询中order by 和 limit 使用 可能会先执行 limit，再执行order  by ，这样就得不到预期结果了。</p>
 <h2 id="说一下mvcc" tabindex="-1"><a class="header-anchor" href="#说一下mvcc"><span>说一下MVCC？</span></a></h2>
 <p>​	    mvcc称为多版本并发控制，是一种用于解决读写冲突的无锁并发控制，它会为每个事务分配一个单向增长的时间戳，并且为每一次修改记录一个版本，版本和事务时间戳相关联。读操作只读该事务开启之前数据库的快照。这样读操作不会阻塞写操作，写操作在不阻塞读操作的同时，也避免了脏读和不可重复读的问题，提高了数据库并发读写的性能。</p>
 <p>​	<strong>实现原理依靠的是什么？</strong></p>
@@ -3254,63 +3247,52 @@
 <ol>
 <li>
 <p>初始化一个新的Git仓库：</p>
-<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code><span class="line">git init</span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
+<div class="language-text line-numbers-mode line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre  class="shiki nord vp-code" style="background-color:#2e3440ff;color:#d8dee9ff" v-pre=" language-text"><code><span class="line"><span class="line"><span>git init</span></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"></div><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>克隆远程仓库到本地：</p>
-<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code><span class="line">git clone 远程仓库url地址</span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
+<div class="language-text line-numbers-mode line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre  class="shiki nord vp-code" style="background-color:#2e3440ff;color:#d8dee9ff" v-pre=" language-text"><code><span class="line"><span class="line"><span>git clone 远程仓库url地址</span></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"></div><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>添加文件到暂存区：</p>
-<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code><span class="line">git add 文件名</span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
+<div class="language-text line-numbers-mode line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre  class="shiki nord vp-code" style="background-color:#2e3440ff;color:#d8dee9ff" v-pre=" language-text"><code><span class="line"><span class="line"><span>git add 文件名</span></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"></div><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>提交更改到本地仓库：</p>
-<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code><span class="line">git commit -m 描述信息</span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
+<div class="language-text line-numbers-mode line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre  class="shiki nord vp-code" style="background-color:#2e3440ff;color:#d8dee9ff" v-pre=" language-text"><code><span class="line"><span class="line"><span>git commit -m 描述信息</span></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"></div><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>查看当前仓库的状态：</p>
-<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code><span class="line">git status</span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
+<div class="language-text line-numbers-mode line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre  class="shiki nord vp-code" style="background-color:#2e3440ff;color:#d8dee9ff" v-pre=" language-text"><code><span class="line"><span class="line"><span>git status</span></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"></div><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>查看文件变动的具体内容：</p>
-<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code><span class="line">git diff</span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
+<div class="language-text line-numbers-mode line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre  class="shiki nord vp-code" style="background-color:#2e3440ff;color:#d8dee9ff" v-pre=" language-text"><code><span class="line"><span class="line"><span>git diff</span></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"></div><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>从远程仓库拉取最新版本：</p>
-<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code><span class="line">git pull</span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
+<div class="language-text line-numbers-mode line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre  class="shiki nord vp-code" style="background-color:#2e3440ff;color:#d8dee9ff" v-pre=" language-text"><code><span class="line"><span class="line"><span>git pull</span></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"></div><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>将本地仓库的修改推动到远程仓库：</p>
-<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code><span class="line">git push</span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
+<div class="language-text line-numbers-mode line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre  class="shiki nord vp-code" style="background-color:#2e3440ff;color:#d8dee9ff" v-pre=" language-text"><code><span class="line"><span class="line"><span>git push</span></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"></div><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>创建一个新的分支：</p>
 <p>git branch 分支名称   /   git  branch    查看当前分支，以及列出所有分支</p>
 </li>
 <li>
 <p>切换到指定分支：</p>
-<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code><span class="line">git checkout 分支名称</span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
+<div class="language-text line-numbers-mode line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre  class="shiki nord vp-code" style="background-color:#2e3440ff;color:#d8dee9ff" v-pre=" language-text"><code><span class="line"><span class="line"><span>git checkout 分支名称</span></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"></div><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>合并指定分支到当前分支：</p>
-<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code><span class="line">git merge 分支名称</span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
+<div class="language-text line-numbers-mode line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre  class="shiki nord vp-code" style="background-color:#2e3440ff;color:#d8dee9ff" v-pre=" language-text"><code><span class="line"><span class="line"><span>git merge 分支名称</span></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"></div><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>查看提交历史：</p>
-<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code><span class="line">git log</span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
+<div class="language-text line-numbers-mode line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre  class="shiki nord vp-code" style="background-color:#2e3440ff;color:#d8dee9ff" v-pre=" language-text"><code><span class="line"><span class="line"><span>git log</span></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"></div><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 </ol>
 <h2 id="git如果发生冲突怎么办" tabindex="-1"><a class="header-anchor" href="#git如果发生冲突怎么办"><span>Git如果发生冲突怎么办？</span></a></h2>
 <p>当我们修改文件之后想要提交到远程仓库，这时候就可能发生冲突。我们首先要定位到发生冲突的文件，并手动解决冲突，然后再提交到远程仓库中。</p>

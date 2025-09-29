@@ -9,7 +9,8 @@ import * as clientConfig7 from 'F:/MyCode/ReaosenBlog/docs/.vuepress/.temp/prism
 import * as clientConfig8 from 'F:/MyCode/ReaosenBlog/docs/.vuepress/.temp/markdown-tab/config.js'
 import * as clientConfig9 from 'F:/MyCode/ReaosenBlog/node_modules/.pnpm/@vuepress+plugin-theme-data_8064e8ac381df6b5959755110213e7b2/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
 import * as clientConfig10 from 'F:/MyCode/ReaosenBlog/node_modules/.pnpm/@vuepress+theme-default@2.0_65d1d68bf51e71fe08e773c3beb541b5/node_modules/@vuepress/theme-default/lib/client/config.js'
-import * as clientConfig11 from 'F:/MyCode/ReaosenBlog/docs/.vuepress/client.js'
+import * as clientConfig11 from 'F:/MyCode/ReaosenBlog/docs/.vuepress/.temp/shiki/config.js'
+import * as clientConfig12 from 'F:/MyCode/ReaosenBlog/docs/.vuepress/client.js'
 
 export const clientConfigs = [
   clientConfig0,
@@ -24,4 +25,5 @@ export const clientConfigs = [
   clientConfig9,
   clientConfig10,
   clientConfig11,
+  clientConfig12,
 ].map((m) => m.default).filter(Boolean)

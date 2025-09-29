@@ -2,6 +2,8 @@ import { blogPlugin } from '@vuepress/plugin-blog'
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { searchPlugin } from '@vuepress/plugin-search'
+import { shikiPlugin } from '@vuepress/plugin-shiki'
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -11,7 +13,6 @@ export default defineUserConfig({
 
   theme: defaultTheme({
     navbar: [
-      '/',
       {
         text: '首页',
         link: '/',
@@ -133,10 +134,16 @@ export default defineUserConfig({
         ]
       },
     ],
-    lastUpdated: '更新时间', // string | boolean
   }),
 
   plugins: [
+    shikiPlugin({
+      // 配置项
+      langs: ['ts', 'json', 'vue', 'md', 'bash', 'java'],
+    }),
+    searchPlugin({
+      // 配置项
+    }),
     blogPlugin({
       // Only files under posts are articles
       filter: ({ filePathRelative }) =>
@@ -155,7 +162,6 @@ export default defineUserConfig({
             ? frontmatter.excerpt
             : data?.excerpt || '',
       }),
-
       // Generate excerpt for all pages excerpt those users choose to disable
       excerptFilter: ({ frontmatter }) =>
         !frontmatter.home &&
