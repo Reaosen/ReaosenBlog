@@ -1,0 +1,3 @@
+import comp from "F:/MyCode/ReaosenBlog/docs/.vuepress/.temp/pages/sidebar/readingNotes/philosophyStart.html.vue"
+const data = JSON.parse("{\"path\":\"/sidebar/readingNotes/philosophyStart.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{},\"filePathRelative\":\"sidebar/readingNotes/philosophyStart.md\",\"excerpt\":\"<p>最近刷到了博主麦片的视频，里面的讨论着实让人振聋发聩。</p>\\n<p>我也曾迷茫地思考，我们的道路究竟对不对，最终的目标能不能实现。</p>\\n<p>有时我会想这些和我有关系吗?我只不过是艰苦挣扎的一员，连存款都没有。</p>\\n<p>但那时的人们不也是如此?</p>\\n<p>麦片引起的讨论不可谓不激烈，其中不乏激进之言，但是我看到的是人们为了实现一个共同的理想而对道路的积极探索。</p>\\n<blockquote>\\n<p>真理总是越辩越明的。</p>\\n</blockquote>\\n<p>或许我该学习一下哲学。于是找到了艾思奇先生的《大众哲学》，希望能为我的哲学启蒙。</p>\\n\"}")
+export { comp, data }

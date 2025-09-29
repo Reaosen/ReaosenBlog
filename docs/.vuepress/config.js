@@ -10,8 +10,6 @@ export default defineUserConfig({
   description: '这是我的个人网站，用来存放一些有用或者没用的碎碎念',
 
   theme: defaultTheme({
-    logo: '/reaosen_favicon.ico',
-
     navbar: [
       '/',
       {
@@ -28,103 +26,114 @@ export default defineUserConfig({
       },
     ],
 
-    theme: defaultTheme({
-      // 侧边栏数组
-      // 所有页面会使用相同的侧边栏
-      sidebar: [
-        // SidebarItem
-        {
-          title: '工作笔记',   // 必要的
-          collapsable: true,// 是否可折叠，默认为true
-          sidebarDepth: 1,    // 可选的, 默认值是 1
-          children: [
-            {
-              title: '7月工作笔记',   // 必要的
-              path: '/workExperience/julyWork.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-            },
-            {
-              title: '8,9月工作笔记',   // 必要的
-              path: '/workExperience/Aug&Sept.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-            },
-            {
-              title: '离职（9.22）',   // 必要的
-              path: '/workExperience/QihuaSoft.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-            },
-          ]
-        },
-        {
-          title: '技术笔记',
-          collapsable: true,
-          sidebarDepth: 1,    // 可选的, 默认值是 1
-          children: [
-            {
-              title: '面试题',
-              path: '/technologyStack/interviewQuestions.md',
-            },
-            {
-              title: 'Tomcat日志在idea控制台乱码',
-              path: '/technologyStack/Tomcat&Idea.md',
-            },
-            {
-              title: '如何提升代码健壮性',
-              path: '/technologyStack/robustnessOfCode.md',
-            },
-          ]
-        },
-        {
-          title: '读书笔记',
-          collapsable: true,
-          sidebarDepth: 1,    // 可选的, 默认值是 1
-          children: [
-            {
-              title: '哲学启蒙-大众哲学',
-              path: '/readingNotes/philosophyStart.md',
-            }
-          ]
-        },
-        {
-          title: '菜谱',
-          collapsable: true,
-          children: [
-            {
-              title: '红烧肉',
-              path: '/cooking/hongshaorou.md',
+    // sidebar: {
+    //   '/sidebar/': [
+    //     {
+    //       text: '工作笔记',
+    //       collapsible: true,
+    //       // 基于项目路径的 .md 或 .html 后缀是可以省略的
+    //       prefix: 'workExperience/',
+    //       children: ['julyWork', 'QihuaSoft'],
+    //     },
+    //     {
+    //       text: 'Bundlers Reference',
+    //       collapsible: true,
+    //       // 前缀可以是相对路径，等同于 `prefix: /reference/bundler/`
+    //       // prefix: 'bundler/',
+    //       children: ['interviewQuestions', 'robustnessOfCode'],
+    //     },
+    //   ],
+    // },
+    sidebar: [
+      // SidebarItem
+      {
+        text: '工作笔记',   // 必要的
+        collapsible: true,// 是否可折叠，默认为true
+        children: [
+          {
+            text: '7月工作笔记',   // 必要的
+            link: '/sidebar/workExperience/julyWork.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+          },
+          {
+            text: '8,9月工作笔记',   // 必要的
+            link: '/sidebar/workExperience/Aug&Sept.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+          },
+          {
+            text: '离职（9.22）',   // 必要的
+            link: '/sidebar/workExperience/QihuaSoft.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+          },
+        ]
+      },
+      {
+        text: '技术笔记',
+        collapsible: true,
+        children: [
+          {
+            text: '面试题',
+            link: '/sidebar/technologyStack/interviewQuestions.md',
+          },
+          {
+            text: 'Tomcat日志在idea控制台乱码',
+            link: '/sidebar/technologyStack/Tomcat&Idea.md',
+          },
+          {
+            text: '如何提升代码健壮性',
+            link: '/sidebar/technologyStack/robustnessOfCode.md',
+          },
+        ]
+      },
+      {
+        text: '读书笔记',
+        collapsible: true,
+        children: [
+          {
+            text: '哲学启蒙-大众哲学',
+            link: '/sidebar/readingNotes/philosophyStart.md',
+          }
+        ]
+      },
+      {
+        text: '菜谱',
+        collapsible: true,
+        children: [
+          {
+            text: '红烧肉',
+            link: '/sidebar/cooking/hongshaorou.md',
 
-            },
-            {
-              title: '蒜苔炒肉',
-              path: '/cooking/suantaichaorou.md',
-            },
-            {
-              title: '肥牛抱蛋饭',
-              path: '/cooking/FeiNiuBaoDanFan.md',
-            },
-          ]
-        },
-        {
-          title: '游戏攻略',
-          collapsable: true,
-          children: [
-            {
-              title: '三角洲行动-卡战备',
-              path: '/games/DeltaForceClient/KaZhanBei.md',
-            },
+          },
+          {
+            text: '蒜苔炒肉',
+            link: '/sidebar/cooking/suantaichaorou.md',
+          },
+          {
+            text: '肥牛抱蛋饭',
+            link: '/sidebar/cooking/FeiNiuBaoDanFan.md',
+          },
+        ]
+      },
+      {
+        text: '游戏攻略',
+        collapsible: true,
+        children: [
+          {
+            text: '三角洲行动-卡战备',
+            link: '/sidebar/games/DeltaForceClient/KaZhanBei.md',
+          },
 
-          ]
-        },
-        {
-          title: '碎碎念',
-          collapsable: true,
-          children: [
-            {
-              title: '无',
-              path: '',
-            }
-          ]
-        },
-      ],
-      lastUpdated: '更新时间', // string | boolean
-    }),
+        ]
+      },
+      {
+        text: '碎碎念',
+        collapsible: true,
+        children: [
+          {
+            text: '无',
+            link: '',
+          }
+        ]
+      },
+    ],
+    lastUpdated: '更新时间', // string | boolean
   }),
 
   plugins: [

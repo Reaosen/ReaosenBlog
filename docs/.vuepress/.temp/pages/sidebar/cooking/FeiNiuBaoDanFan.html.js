@@ -1,0 +1,3 @@
+import comp from "F:/MyCode/ReaosenBlog/docs/.vuepress/.temp/pages/sidebar/cooking/FeiNiuBaoDanFan.html.vue"
+const data = JSON.parse("{\"path\":\"/sidebar/cooking/FeiNiuBaoDanFan.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{},\"filePathRelative\":\"sidebar/cooking/FeiNiuBaoDanFan.md\",\"excerpt\":\"<h4>肥牛抱蛋饭</h4>\\n<ol>\\n<li><code>生抽1勺、老抽1勺、蚝油1勺、糖半勺、胡椒、盐、水</code>，搅拌均匀备用。(多准备点)</li>\\n<li>碗内打入三个鸡蛋，打散备用。</li>\\n<li>国内<strong>薄油</strong>，下入洋葱丝，轻轻翻炒两下下入肥牛。</li>\\n<li>倒入一半料汁，<strong>小火</strong>焖至肥牛变色。</li>\\n<li>倒入鸡蛋液，倒入剩下的料汁，再焖两分钟。</li>\\n<li>撒上芝麻葱花。</li>\\n</ol>\\n\"}")
+export { comp, data }
