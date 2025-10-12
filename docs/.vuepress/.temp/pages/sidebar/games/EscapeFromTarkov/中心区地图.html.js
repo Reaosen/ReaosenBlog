@@ -1,0 +1,3 @@
+import comp from "F:/MyCode/ReaosenBlog/docs/.vuepress/.temp/pages/sidebar/games/EscapeFromTarkov/中心区地图.html.vue"
+const data = JSON.parse("{\"path\":\"/sidebar/games/EscapeFromTarkov/%E4%B8%AD%E5%BF%83%E5%8C%BA%E5%9C%B0%E5%9B%BE.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{},\"filePathRelative\":\"sidebar/games/EscapeFromTarkov/中心区地图.md\",\"excerpt\":\"<img src=\\\"https://reaosen.oss-cn-beijing.aliyuncs.com/image/EscapeFromTarkov/groundZero.png\\\" style=\\\"border-radius: 5px; box-shadow: rgb(221, 222, 222) 0px 0px 0px 5px, white 0px 0px 30px; width: 40%; display: inline-block; float: right;\\\">\"}")
+export { comp, data }

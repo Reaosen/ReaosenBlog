@@ -1,0 +1,3 @@
+import comp from "F:/MyCode/ReaosenBlog/docs/.vuepress/.temp/pages/sidebar/games/EscapeFromTarkov/森林地图.html.vue"
+const data = JSON.parse("{\"path\":\"/sidebar/games/EscapeFromTarkov/%E6%A3%AE%E6%9E%97%E5%9C%B0%E5%9B%BE.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{},\"filePathRelative\":\"sidebar/games/EscapeFromTarkov/森林地图.md\",\"excerpt\":\"<img src=\\\"https://reaosen.oss-cn-beijing.aliyuncs.com/image/EscapeFromTarkov/woods.png\\\" style=\\\"border-radius: 5px; box-shadow: rgb(221, 222, 222) 0px 0px 0px 5px, white 0px 0px 30px; width: 40%; display: inline-block; float: right;\\\">\"}")
+export { comp, data }

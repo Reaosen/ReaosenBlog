@@ -1,0 +1,3 @@
+import comp from "F:/MyCode/ReaosenBlog/docs/.vuepress/.temp/pages/sidebar/workExperience/七月工作日记.html.vue"
+const data = JSON.parse("{\"path\":\"/sidebar/workExperience/%E4%B8%83%E6%9C%88%E5%B7%A5%E4%BD%9C%E6%97%A5%E8%AE%B0.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{},\"filePathRelative\":\"sidebar/workExperience/七月工作日记.md\",\"excerpt\":\"<h4>第一个月（6.23-7.23）</h4>\\n<p><strong>一、我做了什么</strong></p>\\n<ol>\\n<li>\\n<p>使用中控进行视图、表单、库表的建立和编辑</p>\\n</li>\\n<li>\\n<p>利用js和jquery解决表单的问题，主要以限制填写、传递数据、发起请求为主</p>\\n</li>\\n<li>\\n<p>利用后端java进行业务逻辑的编写，以<code>Access.getSingleMap</code>一系列方法为主的数据库查询，以<code>Aspose</code>为主的文件编辑工具类</p>\\n</li>\\n</ol>\\n<p><strong>二、我遇到的问题</strong></p>\"}")
+export { comp, data }

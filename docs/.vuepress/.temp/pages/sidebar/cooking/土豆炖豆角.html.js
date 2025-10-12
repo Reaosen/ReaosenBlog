@@ -1,0 +1,3 @@
+import comp from "F:/MyCode/ReaosenBlog/docs/.vuepress/.temp/pages/sidebar/cooking/土豆炖豆角.html.vue"
+const data = JSON.parse("{\"path\":\"/sidebar/cooking/%E5%9C%9F%E8%B1%86%E7%82%96%E8%B1%86%E8%A7%92.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{},\"filePathRelative\":\"sidebar/cooking/土豆炖豆角.md\",\"excerpt\":\"<h4>土豆炖豆角</h4>\\n<ol>\\n<li>土豆削皮切块，豆角去筋切段，五花肉切块，准备葱段、干辣椒。</li>\\n<li>锅中少油，下入五花肉煸炒出油脂。加入<code>葱段、干辣椒、几粒冰糖</code>继续翻炒。</li>\\n<li>先加入加入土豆翻炒，再加入豆角翻炒至豆角变翠绿。</li>\\n<li>加入<code>2勺生抽、半勺老抽、1勺耗油、1勺黄豆酱</code>，翻炒均匀。</li>\\n<li>加水大火15分钟，汤多收汁。</li>\\n</ol>\\n\"}")
+export { comp, data }

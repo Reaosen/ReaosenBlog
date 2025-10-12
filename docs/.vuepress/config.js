@@ -53,15 +53,15 @@ export default defineUserConfig({
         children: [
           {
             text: '7月工作笔记',   // 必要的
-            link: '/sidebar/workExperience/julyWork.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+            link: '/sidebar/workExperience/七月工作日记.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
           },
           {
             text: '8,9月工作笔记',   // 必要的
-            link: '/sidebar/workExperience/Aug&Sept.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+            link: '/sidebar/workExperience/八九月工作日记.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
           },
           {
             text: '离职（9.22）',   // 必要的
-            link: '/sidebar/workExperience/QihuaSoft.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+            link: '/sidebar/workExperience/琪华离职.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
           },
         ]
       },
@@ -71,15 +71,23 @@ export default defineUserConfig({
         children: [
           {
             text: '面试题',
-            link: '/sidebar/technologyStack/interviewQuestions.md',
+            link: '/sidebar/technologyStack/面试题.md',
           },
           {
             text: 'Tomcat日志在idea控制台乱码',
-            link: '/sidebar/technologyStack/Tomcat&Idea.md',
+            link: '/sidebar/technologyStack/关于idea中的toamcat乱码.md',
           },
           {
             text: '如何提升代码健壮性',
-            link: '/sidebar/technologyStack/robustnessOfCode.md',
+            link: '/sidebar/technologyStack/如何提升代码健壮性.md',
+          },
+          {
+            text: 'docker常用指令',
+            link: '/sidebar/technologyStack/docker常用指令.md',
+          },
+          {
+            text: 'linux常用指令',
+            link: '/sidebar/technologyStack/linux常用指令.md',
           },
         ]
       },
@@ -89,7 +97,7 @@ export default defineUserConfig({
         children: [
           {
             text: '哲学启蒙-大众哲学',
-            link: '/sidebar/readingNotes/philosophyStart.md',
+            link: '/sidebar/readingNotes/大众哲学.md',
           }
         ]
       },
@@ -99,16 +107,16 @@ export default defineUserConfig({
         children: [
           {
             text: '红烧肉',
-            link: '/sidebar/cooking/hongshaorou.md',
+            link: '/sidebar/cooking/红烧肉.md',
 
           },
           {
             text: '蒜苔炒肉',
-            link: '/sidebar/cooking/suantaichaorou.md',
+            link: '/sidebar/cooking/蒜苔炒肉.md',
           },
           {
             text: '肥牛抱蛋饭',
-            link: '/sidebar/cooking/FeiNiuBaoDanFan.md',
+            link: '/sidebar/cooking/肥牛抱蛋饭.md',
           },
         ]
       },
@@ -118,7 +126,23 @@ export default defineUserConfig({
         children: [
           {
             text: '三角洲行动-卡战备',
-            link: '/sidebar/games/DeltaForceClient/KaZhanBei.md',
+            link: '/sidebar/games/DeltaForceClient/卡战备.md',
+          },
+          {
+            text: '塔科夫-海岸线地图',
+            link: '/sidebar/games/EscapeFromTarkov/海岸线地图.md',
+          },
+          {
+            text: '塔科夫-中心区地图',
+            link: '/sidebar/games/EscapeFromTarkov/中心区地图.md',
+          },
+          {
+            text: '塔科夫-森林地图',
+            link: '/sidebar/games/EscapeFromTarkov/森林地图.md',
+          },
+          {
+            text: '塔科夫-海关地图',
+            link: '/sidebar/games/EscapeFromTarkov/海关地图.md',
           },
 
         ]
