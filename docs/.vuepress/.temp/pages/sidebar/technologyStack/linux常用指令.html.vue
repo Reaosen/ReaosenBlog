@@ -1,6 +1,7 @@
 <template><div><h2 id="🐧-常用-linux-命令速查表" tabindex="-1"><a class="header-anchor" href="#🐧-常用-linux-命令速查表"><span>🐧 常用 Linux 命令速查表</span></a></h2>
-<p>&gt; 持续更新，建议收藏。<br>
-&gt; 所有示例均基于 Bash，适用于绝大多数 GNU/Linux 发行版。</p>
+<blockquote>
+<p>所有示例均基于 Bash，适用于绝大多数 GNU/Linux 发行版。</p>
+</blockquote>
 <hr>
 <h3 id="_1-文件与目录操作" tabindex="-1"><a class="header-anchor" href="#_1-文件与目录操作"><span>1. 文件与目录操作</span></a></h3>
 <table>

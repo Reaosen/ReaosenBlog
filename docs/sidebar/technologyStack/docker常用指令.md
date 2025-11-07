@@ -1,6 +1,4 @@
 # 🐳 Docker 常用命令速查表
-&gt; 持续更新，建议 `star` 或 `收藏`。  
-&gt; 基于 **Docker CE 24.x**，适用于所有主流 Linux/Windows/macOS 客户端。
 
 ---
 

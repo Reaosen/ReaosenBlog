@@ -63,6 +63,10 @@ export default defineUserConfig({
             text: '离职（9.22）',   // 必要的
             link: '/sidebar/workExperience/琪华离职.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
           },
+          {
+            text: '10.21 面试记录-保险外包',   // 必要的
+            link: '/sidebar/workExperience/10.21 面试记录-保险外包.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+          },
         ]
       },
       {
@@ -74,8 +78,8 @@ export default defineUserConfig({
             link: '/sidebar/technologyStack/面试题.md',
           },
           {
-            text: 'Tomcat日志在idea控制台乱码',
-            link: '/sidebar/technologyStack/关于idea中的toamcat乱码.md',
+            text: '关于idea中控制台乱码',
+            link: '/sidebar/technologyStack/关于idea中控制台乱码.md',
           },
           {
             text: '如何提升代码健壮性',
@@ -108,7 +112,6 @@ export default defineUserConfig({
           {
             text: '红烧肉',
             link: '/sidebar/cooking/红烧肉.md',
-
           },
           {
             text: '蒜苔炒肉',
@@ -117,6 +120,18 @@ export default defineUserConfig({
           {
             text: '肥牛抱蛋饭',
             link: '/sidebar/cooking/肥牛抱蛋饭.md',
+          },
+          {
+            text: '土豆炖豆角',
+            link: '/sidebar/cooking/土豆炖豆角.md',
+          },
+          {
+            text: '黄瓜炒鸡蛋',
+            link: '/sidebar/cooking/黄瓜炒鸡蛋.md',
+          },
+          {
+            text: '糖醋土豆鸡蛋',
+            link: '/sidebar/cooking/糖醋土豆鸡蛋.md',
           },
         ]
       },
@@ -269,6 +284,5 @@ export default defineUserConfig({
       hotReload: true,
     }),
   ],
-
   bundler: viteBundler(),
 })

@@ -1,0 +1,3 @@
+import comp from "F:/MyCode/ReaosenBlog/docs/.vuepress/.temp/pages/sidebar/cooking/糖醋土豆鸡蛋.html.vue"
+const data = JSON.parse("{\"path\":\"/sidebar/cooking/%E7%B3%96%E9%86%8B%E5%9C%9F%E8%B1%86%E9%B8%A1%E8%9B%8B.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{},\"filePathRelative\":\"sidebar/cooking/糖醋土豆鸡蛋.md\",\"excerpt\":\"<h4>糖醋土豆鸡蛋</h4>\\n<ol>\\n<li>四个鸡蛋打散，加盐，搅拌均匀。切葱花、蒜末。土豆、火腿肠切骰子块。</li>\\n<li>碗中加<code>两勺生抽、半勺老抽、一勺醋、一勺白糖、一勺番茄酱、一勺淀粉、半碗清水</code>。</li>\\n<li>宽油下鸡蛋，少搅拌，煎大块。</li>\\n<li>土豆、火腿肠下锅煎焦。下入葱花蒜末炒香。</li>\\n<li>加入煎好的鸡蛋，倒入料汁，开大火翻炒，收汁出锅。</li>\\n</ol>\\n\"}")
+export { comp, data }

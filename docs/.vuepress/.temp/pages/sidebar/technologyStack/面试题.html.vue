@@ -1832,11 +1832,11 @@
 <li>如果方法上加了@ResponseBody注解，那么就将返回值返回给客户端，这个过程中可能需要把java对象转成json字符串。</li>
 <li>如果方法上没有加@ResponseBody注解，那么就会进行视图解析，然后把解析之后的html数据返回给客户端。</li>
 </ol>
-<p><strong>过滤器在这个流程中是什么时候执行的？</strong></p>
+<p><strong>过滤器在这个流程中是什么时候执行的？</strong> 🌟</p>
 <p>​	过滤器是在请求达到DispatcherServlet之前，并且在DispatcherServlet处理完之后按照相反的过滤器链执行。</p>
 <p><strong>如果有多个过滤器，那么执行顺序是什么样的？</strong></p>
 <p>​	执行顺序是按照在web.xml文件中配置的顺序执行的；如果是使用注解的方式，可以搭配@Order注解，值小的过滤器先执行。</p>
-<h2 id="过滤器和拦截器的区别" tabindex="-1"><a class="header-anchor" href="#过滤器和拦截器的区别"><span>过滤器和拦截器的区别？</span></a></h2>
+<h2 id="过滤器和拦截器的区别-🌟" tabindex="-1"><a class="header-anchor" href="#过滤器和拦截器的区别-🌟"><span>过滤器和拦截器的区别？🌟</span></a></h2>
 <ol>
 <li>
 <p>运行顺序不同</p>
@@ -2249,7 +2249,7 @@
 <p>​	对于<strong>只有</strong>弱引用的对象，不管内存空间是否充足，只要垃圾回收一运行，那么这些对象就会被回收，它可以解决内存泄漏的问题。</p>
 <p><strong>4.虚引用</strong>：</p>
 <p>​	它不能单独使用，必须结合引用队列使用。它的主要作用是跟踪对象被垃圾回收的状态。</p>
-<h2 id="如果发现内存溢出-应该怎么排查" tabindex="-1"><a class="header-anchor" href="#如果发现内存溢出-应该怎么排查"><span>如果发现内存溢出，应该怎么排查</span></a></h2>
+<h2 id="如果发现内存溢出-应该怎么排查🌟" tabindex="-1"><a class="header-anchor" href="#如果发现内存溢出-应该怎么排查🌟"><span>如果发现内存溢出，应该怎么排查🌟</span></a></h2>
 <ol>
 <li>查看关键报错信息，如java.lang.OutOfMemoryError。</li>
 <li>使用内存映射分析工具对Dump出来的堆储存快照进行分析，分析清楚是内存溢出还是泄漏。</li>

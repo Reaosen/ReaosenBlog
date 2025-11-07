@@ -1,3 +1,5 @@
-<template><div><img src="https://reaosen.oss-cn-beijing.aliyuncs.com/image/EscapeFromTarkov/groundZero.png" style="border-radius: 5px; box-shadow: rgb(221, 222, 222) 0px 0px 0px 5px, white 0px 0px 30px; width: 40%; display: inline-block; float: right;"></div></template>
+<template><div><p><img src="https://reaosen.oss-cn-beijing.aliyuncs.com/image/EscapeFromTarkov/groundZero.png"
+     style="border-radius:5px; box-shadow:0 0 0 5px #ddddee, 0 0 30px #fff; width:40%; margin:0 auto; display:block;"></p>
+</div></template>
 
 

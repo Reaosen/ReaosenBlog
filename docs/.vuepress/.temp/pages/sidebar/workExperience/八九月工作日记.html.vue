@@ -47,7 +47,7 @@
 <p>学习目前的主流技术栈，可以找找自己感兴趣的项目学习。</p>
 </li>
 <li>
-<p>提升代码健壮性，见<RouteLink to="/technologyStack/robustnessOfCode.html">如何提升代码健壮性</RouteLink>。</p>
+<p>提升代码健壮性，见<RouteLink to="/sidebar/technologyStack/robustnessOfCode.html">如何提升代码健壮性</RouteLink>。</p>
 </li>
 </ol>
 </div></template>

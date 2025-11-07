@@ -1,6 +1,4 @@
 <template><div><h1 id="🐳-docker-常用命令速查表" tabindex="-1"><a class="header-anchor" href="#🐳-docker-常用命令速查表"><span>🐳 Docker 常用命令速查表</span></a></h1>
-<p>&gt; 持续更新，建议 <code v-pre>star</code> 或 <code v-pre>收藏</code>。<br>
-&gt; 基于 <strong>Docker CE 24.x</strong>，适用于所有主流 Linux/Windows/macOS 客户端。</p>
 <hr>
 <h2 id="_1-生命周期一条龙" tabindex="-1"><a class="header-anchor" href="#_1-生命周期一条龙"><span>1. 生命周期一条龙</span></a></h2>
 <table>
