@@ -93,6 +93,14 @@ export default defineUserConfig({
             text: 'linux常用指令',
             link: '/sidebar/technologyStack/linux常用指令.md',
           },
+          {
+            text: 'svn常用指令',
+            link: '/sidebar/technologyStack/svn常用指令.md',
+          },
+          {
+            text: '乱码规律',
+            link: '/sidebar/technologyStack/乱码规律.md',
+          },
         ]
       },
       {

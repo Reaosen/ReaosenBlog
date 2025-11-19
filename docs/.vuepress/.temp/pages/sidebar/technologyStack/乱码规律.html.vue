@@ -1,0 +1,5 @@
+<template><div><p><img src="http://reaosen.oss-cn-beijing.aliyuncs.com/image/technology/乱码规律.png"
+     style="border-radius:5px; box-shadow:0 0 0 5px #ddddee, 0 0 30px #fff; width:40%; margin:0 auto; display:block;"></p>
+</div></template>
+
+

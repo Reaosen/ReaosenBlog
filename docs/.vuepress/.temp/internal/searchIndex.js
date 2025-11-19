@@ -377,6 +377,13 @@ export const SEARCH_INDEX = [
   {
     "title": "",
     "headers": [],
+    "path": "/sidebar/readingNotes/%E5%A4%A7%E4%BC%97%E5%93%B2%E5%AD%A6.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
     "path": "/sidebar/cooking/%E5%9C%9F%E8%B1%86%E7%82%96%E8%B1%86%E8%A7%92.html",
     "pathLocale": "/",
     "extraFields": []
@@ -418,8 +425,86 @@ export const SEARCH_INDEX = [
   },
   {
     "title": "",
+    "headers": [
+      {
+        "level": 2,
+        "title": "项目中最复杂的业务场景？",
+        "slug": "项目中最复杂的业务场景",
+        "link": "#项目中最复杂的业务场景",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "SQL 优化日常注意点？",
+        "slug": "sql-优化日常注意点",
+        "link": "#sql-优化日常注意点",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "索引在什么情况下会失效？",
+        "slug": "索引在什么情况下会失效",
+        "link": "#索引在什么情况下会失效",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "后端开启异步的 4 种常用方式？",
+        "slug": "后端开启异步的-4-种常用方式",
+        "link": "#后端开启异步的-4-种常用方式",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "缓存挡板在哪个节点写入？",
+        "slug": "缓存挡板在哪个节点写入",
+        "link": "#缓存挡板在哪个节点写入",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "大文件上传① 用户等待久；② 浏览器 5 min 超时；③ 连接池被长时间占用。解决方案?",
+        "slug": "大文件上传1-用户等待久-2-浏览器-5-min-超时-3-连接池被长时间占用。解决方案",
+        "link": "#大文件上传1-用户等待久-2-浏览器-5-min-超时-3-连接池被长时间占用。解决方案",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "多线程合并文件时如何保证数据一致？",
+        "slug": "多线程合并文件时如何保证数据一致",
+        "link": "#多线程合并文件时如何保证数据一致",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "如果发现内存溢出，应该怎么排查",
+        "slug": "如果发现内存溢出-应该怎么排查",
+        "link": "#如果发现内存溢出-应该怎么排查",
+        "children": []
+      }
+    ],
+    "path": "/sidebar/workExperience/10.21%20%E9%9D%A2%E8%AF%95%E8%AE%B0%E5%BD%95-%E4%BF%9D%E9%99%A9%E5%A4%96%E5%8C%85.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
     "headers": [],
-    "path": "/sidebar/readingNotes/%E5%A4%A7%E4%BC%97%E5%93%B2%E5%AD%A6.html",
+    "path": "/sidebar/workExperience/%E4%B8%83%E6%9C%88%E5%B7%A5%E4%BD%9C%E6%97%A5%E8%AE%B0.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/sidebar/workExperience/%E5%85%AB%E4%B9%9D%E6%9C%88%E5%B7%A5%E4%BD%9C%E6%97%A5%E8%AE%B0.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/sidebar/workExperience/%E7%90%AA%E5%8D%8E%E7%A6%BB%E8%81%8C.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -604,7 +689,21 @@ export const SEARCH_INDEX = [
   {
     "title": "",
     "headers": [],
-    "path": "/sidebar/technologyStack/%E5%85%B3%E4%BA%8Eidea%E4%B8%AD%E7%9A%84toamcat%E4%B9%B1%E7%A0%81.html",
+    "path": "/sidebar/technologyStack/svn%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/sidebar/technologyStack/%E4%B9%B1%E7%A0%81%E8%A7%84%E5%BE%8B.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/sidebar/technologyStack/%E5%85%B3%E4%BA%8Eidea%E4%B8%AD%E6%8E%A7%E5%88%B6%E5%8F%B0%E4%B9%B1%E7%A0%81.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -3094,91 +3193,6 @@ export const SEARCH_INDEX = [
       }
     ],
     "path": "/sidebar/technologyStack/%E9%9D%A2%E8%AF%95%E9%A2%98.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [
-      {
-        "level": 2,
-        "title": "项目中最复杂的业务场景？",
-        "slug": "项目中最复杂的业务场景",
-        "link": "#项目中最复杂的业务场景",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "SQL 优化日常注意点？",
-        "slug": "sql-优化日常注意点",
-        "link": "#sql-优化日常注意点",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "索引在什么情况下会失效？",
-        "slug": "索引在什么情况下会失效",
-        "link": "#索引在什么情况下会失效",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "后端开启异步的 4 种常用方式？",
-        "slug": "后端开启异步的-4-种常用方式",
-        "link": "#后端开启异步的-4-种常用方式",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "缓存挡板在哪个节点写入？",
-        "slug": "缓存挡板在哪个节点写入",
-        "link": "#缓存挡板在哪个节点写入",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "大文件上传① 用户等待久；② 浏览器 5 min 超时；③ 连接池被长时间占用。解决方案?",
-        "slug": "大文件上传1-用户等待久-2-浏览器-5-min-超时-3-连接池被长时间占用。解决方案",
-        "link": "#大文件上传1-用户等待久-2-浏览器-5-min-超时-3-连接池被长时间占用。解决方案",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "多线程合并文件时如何保证数据一致？",
-        "slug": "多线程合并文件时如何保证数据一致",
-        "link": "#多线程合并文件时如何保证数据一致",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "如果发现内存溢出，应该怎么排查",
-        "slug": "如果发现内存溢出-应该怎么排查",
-        "link": "#如果发现内存溢出-应该怎么排查",
-        "children": []
-      }
-    ],
-    "path": "/sidebar/workExperience/10.21%20%E9%9D%A2%E8%AF%95%E8%AE%B0%E5%BD%95-%E4%BF%9D%E9%99%A9%E5%A4%96%E5%8C%85.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/sidebar/workExperience/%E4%B8%83%E6%9C%88%E5%B7%A5%E4%BD%9C%E6%97%A5%E8%AE%B0.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/sidebar/workExperience/%E5%85%AB%E4%B9%9D%E6%9C%88%E5%B7%A5%E4%BD%9C%E6%97%A5%E8%AE%B0.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/sidebar/workExperience/%E7%90%AA%E5%8D%8E%E7%A6%BB%E8%81%8C.html",
     "pathLocale": "/",
     "extraFields": []
   },
