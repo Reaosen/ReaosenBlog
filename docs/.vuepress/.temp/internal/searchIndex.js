@@ -377,13 +377,6 @@ export const SEARCH_INDEX = [
   {
     "title": "",
     "headers": [],
-    "path": "/sidebar/readingNotes/%E5%A4%A7%E4%BC%97%E5%93%B2%E5%AD%A6.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
     "path": "/sidebar/cooking/%E5%9C%9F%E8%B1%86%E7%82%96%E8%B1%86%E8%A7%92.html",
     "pathLocale": "/",
     "extraFields": []
@@ -483,284 +476,7 @@ export const SEARCH_INDEX = [
         "children": []
       }
     ],
-    "path": "/sidebar/workExperience/10.21%20%E9%9D%A2%E8%AF%95%E8%AE%B0%E5%BD%95-%E4%BF%9D%E9%99%A9%E5%A4%96%E5%8C%85.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/sidebar/workExperience/%E4%B8%83%E6%9C%88%E5%B7%A5%E4%BD%9C%E6%97%A5%E8%AE%B0.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/sidebar/workExperience/%E5%85%AB%E4%B9%9D%E6%9C%88%E5%B7%A5%E4%BD%9C%E6%97%A5%E8%AE%B0.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/sidebar/workExperience/%E7%90%AA%E5%8D%8E%E7%A6%BB%E8%81%8C.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "🐳 Docker 常用命令速查表",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1. 生命周期一条龙",
-        "slug": "_1-生命周期一条龙",
-        "link": "#_1-生命周期一条龙",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2. 镜像管理",
-        "slug": "_2-镜像管理",
-        "link": "#_2-镜像管理",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3. 容器日常操作",
-        "slug": "_3-容器日常操作",
-        "link": "#_3-容器日常操作",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4. 端口/卷/环境变量",
-        "slug": "_4-端口-卷-环境变量",
-        "link": "#_4-端口-卷-环境变量",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5. 卷 & 网络",
-        "slug": "_5-卷-网络",
-        "link": "#_5-卷-网络",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "6. Docker Compose（精简）",
-        "slug": "_6-docker-compose-精简",
-        "link": "#_6-docker-compose-精简",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "7. 调试",
-        "slug": "_7-调试",
-        "link": "#_7-调试",
-        "children": []
-      }
-    ],
-    "path": "/sidebar/technologyStack/docker%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "为当前用户添加彩色 ll 别名",
-    "headers": [
-      {
-        "level": 2,
-        "title": "🐧 常用 Linux 命令速查表",
-        "slug": "🐧-常用-linux-命令速查表",
-        "link": "#🐧-常用-linux-命令速查表",
-        "children": [
-          {
-            "level": 3,
-            "title": "1. 文件与目录操作",
-            "slug": "_1-文件与目录操作",
-            "link": "#_1-文件与目录操作",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "2. 文件内容查看与搜索",
-            "slug": "_2-文件内容查看与搜索",
-            "link": "#_2-文件内容查看与搜索",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "3. 权限与用户",
-            "slug": "_3-权限与用户",
-            "link": "#_3-权限与用户",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "4. 进程与系统",
-            "slug": "_4-进程与系统",
-            "link": "#_4-进程与系统",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "5. 网络",
-            "slug": "_5-网络",
-            "link": "#_5-网络",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "6. 压缩与归档",
-            "slug": "_6-压缩与归档",
-            "link": "#_6-压缩与归档",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "7. 软件包管理（选型）",
-            "slug": "_7-软件包管理-选型",
-            "link": "#_7-软件包管理-选型",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "8.  Shell 快捷键 & 技巧",
-            "slug": "_8-shell-快捷键-技巧",
-            "link": "#_8-shell-快捷键-技巧",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "9. 一键复制配置（可选）",
-            "slug": "_9-一键复制配置-可选",
-            "link": "#_9-一键复制配置-可选",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "11. 文本处理三剑客 & 流水线",
-            "slug": "_11-文本处理三剑客-流水线",
-            "link": "#_11-文本处理三剑客-流水线",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "12. 重定向与进程控制",
-            "slug": "_12-重定向与进程控制",
-            "link": "#_12-重定向与进程控制",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "13. 定时与后台任务",
-            "slug": "_13-定时与后台任务",
-            "link": "#_13-定时与后台任务",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "14. 磁盘与挂载",
-            "slug": "_14-磁盘与挂载",
-            "link": "#_14-磁盘与挂载",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "15. 日志与审计",
-            "slug": "_15-日志与审计",
-            "link": "#_15-日志与审计",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "16. 性能排查一图流（80% 场景够用）",
-            "slug": "_16-性能排查一图流-80-场景够用",
-            "link": "#_16-性能排查一图流-80-场景够用",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/sidebar/technologyStack/linux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/sidebar/technologyStack/svn%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/sidebar/technologyStack/%E4%B9%B1%E7%A0%81%E8%A7%84%E5%BE%8B.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/sidebar/technologyStack/%E5%85%B3%E4%BA%8Eidea%E4%B8%AD%E6%8E%A7%E5%88%B6%E5%8F%B0%E4%B9%B1%E7%A0%81.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "如何提升代码健壮性",
-    "headers": [
-      {
-        "level": 2,
-        "title": "早返回（Guard Clause）",
-        "slug": "早返回-guard-clause",
-        "link": "#早返回-guard-clause",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "表驱动消灭 if/else 链",
-        "slug": "表驱动消灭-if-else-链",
-        "link": "#表驱动消灭-if-else-链",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "重复校验逻辑集中化",
-        "slug": "重复校验逻辑集中化",
-        "link": "#重复校验逻辑集中化",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "异常体系混乱",
-        "slug": "异常体系混乱",
-        "link": "#异常体系混乱",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "魔法值硬编码 → 枚举 + 常量",
-        "slug": "魔法值硬编码-→-枚举-常量",
-        "link": "#魔法值硬编码-→-枚举-常量",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "过度 try-catch → 利用 Optional + 自定义异常",
-        "slug": "过度-try-catch-→-利用-optional-自定义异常",
-        "link": "#过度-try-catch-→-利用-optional-自定义异常",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "日志无重要信息",
-        "slug": "日志无重要信息",
-        "link": "#日志无重要信息",
-        "children": []
-      }
-    ],
-    "path": "/sidebar/technologyStack/%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%BB%A3%E7%A0%81%E5%81%A5%E5%A3%AE%E6%80%A7.html",
+    "path": "/sidebar/interview/10.21%20%E9%9D%A2%E8%AF%95%E8%AE%B0%E5%BD%95-%E4%BF%9D%E9%99%A9%E5%A4%96%E5%8C%85.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -3192,14 +2908,291 @@ export const SEARCH_INDEX = [
         "children": []
       }
     ],
-    "path": "/sidebar/technologyStack/%E9%9D%A2%E8%AF%95%E9%A2%98.html",
+    "path": "/sidebar/interview/%E9%9D%A2%E8%AF%95%E9%A2%98.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
     "title": "",
     "headers": [],
-    "path": "/sidebar/games/DeltaForceClient/%E5%8D%A1%E6%88%98%E5%A4%87.html",
+    "path": "/sidebar/readingNotes/%E5%A4%A7%E4%BC%97%E5%93%B2%E5%AD%A6.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "🐳 Docker 常用命令速查表",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1. 生命周期一条龙",
+        "slug": "_1-生命周期一条龙",
+        "link": "#_1-生命周期一条龙",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2. 镜像管理",
+        "slug": "_2-镜像管理",
+        "link": "#_2-镜像管理",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3. 容器日常操作",
+        "slug": "_3-容器日常操作",
+        "link": "#_3-容器日常操作",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4. 端口/卷/环境变量",
+        "slug": "_4-端口-卷-环境变量",
+        "link": "#_4-端口-卷-环境变量",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5. 卷 & 网络",
+        "slug": "_5-卷-网络",
+        "link": "#_5-卷-网络",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6. Docker Compose（精简）",
+        "slug": "_6-docker-compose-精简",
+        "link": "#_6-docker-compose-精简",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7. 调试",
+        "slug": "_7-调试",
+        "link": "#_7-调试",
+        "children": []
+      }
+    ],
+    "path": "/sidebar/technologyStack/docker%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "为当前用户添加彩色 ll 别名",
+    "headers": [
+      {
+        "level": 2,
+        "title": "🐧 常用 Linux 命令速查表",
+        "slug": "🐧-常用-linux-命令速查表",
+        "link": "#🐧-常用-linux-命令速查表",
+        "children": [
+          {
+            "level": 3,
+            "title": "1. 文件与目录操作",
+            "slug": "_1-文件与目录操作",
+            "link": "#_1-文件与目录操作",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2. 文件内容查看与搜索",
+            "slug": "_2-文件内容查看与搜索",
+            "link": "#_2-文件内容查看与搜索",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3. 权限与用户",
+            "slug": "_3-权限与用户",
+            "link": "#_3-权限与用户",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "4. 进程与系统",
+            "slug": "_4-进程与系统",
+            "link": "#_4-进程与系统",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "5. 网络",
+            "slug": "_5-网络",
+            "link": "#_5-网络",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "6. 压缩与归档",
+            "slug": "_6-压缩与归档",
+            "link": "#_6-压缩与归档",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "7. 软件包管理（选型）",
+            "slug": "_7-软件包管理-选型",
+            "link": "#_7-软件包管理-选型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "8.  Shell 快捷键 & 技巧",
+            "slug": "_8-shell-快捷键-技巧",
+            "link": "#_8-shell-快捷键-技巧",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "9. 一键复制配置（可选）",
+            "slug": "_9-一键复制配置-可选",
+            "link": "#_9-一键复制配置-可选",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "11. 文本处理三剑客 & 流水线",
+            "slug": "_11-文本处理三剑客-流水线",
+            "link": "#_11-文本处理三剑客-流水线",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "12. 重定向与进程控制",
+            "slug": "_12-重定向与进程控制",
+            "link": "#_12-重定向与进程控制",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "13. 定时与后台任务",
+            "slug": "_13-定时与后台任务",
+            "link": "#_13-定时与后台任务",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "14. 磁盘与挂载",
+            "slug": "_14-磁盘与挂载",
+            "link": "#_14-磁盘与挂载",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "15. 日志与审计",
+            "slug": "_15-日志与审计",
+            "link": "#_15-日志与审计",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "16. 性能排查一图流（80% 场景够用）",
+            "slug": "_16-性能排查一图流-80-场景够用",
+            "link": "#_16-性能排查一图流-80-场景够用",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/sidebar/technologyStack/linux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/sidebar/technologyStack/svn%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/sidebar/technologyStack/%E4%B9%B1%E7%A0%81%E8%A7%84%E5%BE%8B.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/sidebar/technologyStack/%E5%85%B3%E4%BA%8Eidea%E4%B8%AD%E6%8E%A7%E5%88%B6%E5%8F%B0%E4%B9%B1%E7%A0%81.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "如何提升代码健壮性",
+    "headers": [
+      {
+        "level": 2,
+        "title": "早返回（Guard Clause）",
+        "slug": "早返回-guard-clause",
+        "link": "#早返回-guard-clause",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "表驱动消灭 if/else 链",
+        "slug": "表驱动消灭-if-else-链",
+        "link": "#表驱动消灭-if-else-链",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "重复校验逻辑集中化",
+        "slug": "重复校验逻辑集中化",
+        "link": "#重复校验逻辑集中化",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "异常体系混乱",
+        "slug": "异常体系混乱",
+        "link": "#异常体系混乱",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "魔法值硬编码 → 枚举 + 常量",
+        "slug": "魔法值硬编码-→-枚举-常量",
+        "link": "#魔法值硬编码-→-枚举-常量",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "过度 try-catch → 利用 Optional + 自定义异常",
+        "slug": "过度-try-catch-→-利用-optional-自定义异常",
+        "link": "#过度-try-catch-→-利用-optional-自定义异常",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "日志无重要信息",
+        "slug": "日志无重要信息",
+        "link": "#日志无重要信息",
+        "children": []
+      }
+    ],
+    "path": "/sidebar/technologyStack/%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%BB%A3%E7%A0%81%E5%81%A5%E5%A3%AE%E6%80%A7.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/sidebar/workExperience/%E4%B8%83%E6%9C%88%E5%B7%A5%E4%BD%9C%E6%97%A5%E8%AE%B0.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/sidebar/workExperience/%E5%85%AB%E4%B9%9D%E6%9C%88%E5%B7%A5%E4%BD%9C%E6%97%A5%E8%AE%B0.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/sidebar/workExperience/%E7%90%AA%E5%8D%8E%E7%A6%BB%E8%81%8C.html",
     "pathLocale": "/",
     "extraFields": []
   },

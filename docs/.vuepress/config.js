@@ -63,20 +63,13 @@ export default defineUserConfig({
             text: '离职（9.22）',   // 必要的
             link: '/sidebar/workExperience/琪华离职.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
           },
-          {
-            text: '10.21 面试记录-保险外包',   // 必要的
-            link: '/sidebar/workExperience/10.21 面试记录-保险外包.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-          },
+
         ]
       },
       {
         text: '技术笔记',
         collapsible: true,
         children: [
-          {
-            text: '面试题',
-            link: '/sidebar/technologyStack/面试题.md',
-          },
           {
             text: '关于idea中控制台乱码',
             link: '/sidebar/technologyStack/关于idea中控制台乱码.md',
@@ -100,6 +93,20 @@ export default defineUserConfig({
           {
             text: '乱码规律',
             link: '/sidebar/technologyStack/乱码规律.md',
+          },
+        ]
+      },
+      {
+        text: '面试笔记',
+        collapsible: true,
+        children: [
+          {
+            text: '面试题',
+            link: '/sidebar/technologyStack/面试题.md',
+          },
+          {
+            text: '10.21 面试记录-保险外包',   // 必要的
+            link: '/sidebar/workExperience/10.21 面试记录-保险外包.md',     // 可选的, 标题的跳转链接，应为绝对路径且必须存在
           },
         ]
       },
@@ -147,10 +154,6 @@ export default defineUserConfig({
         text: '游戏攻略',
         collapsible: true,
         children: [
-          {
-            text: '三角洲行动-卡战备',
-            link: '/sidebar/games/DeltaForceClient/卡战备.md',
-          },
           {
             text: '塔科夫-海岸线地图',
             link: '/sidebar/games/EscapeFromTarkov/海岸线地图.md',
